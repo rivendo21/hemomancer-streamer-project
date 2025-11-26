@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import Navbar from "./components/Navbar";
-import LeaderBoard from "./components/Leaderboard";
+import LeaderBoard from "./components/LeaderBoard";
 import PatchNotes from "./components/PatchNotes";
 
 function App() {
