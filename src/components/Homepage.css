@@ -1,0 +1,181 @@
+.header-img {
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f8f8f2;
+  font-family: "optimus";
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2681da;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  padding: 15px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3e8ed0;
+}
+.steam-image {
+  margin-left: 8px;
+}
+
+.itch-button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #da2c49;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.itch-button:hover {
+  background-color: #c9596c;
+}
+
+.itch-image {
+  margin-left: 20px;
+}
+
+.itch-text {
+  margin-left: 25px;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.twitch-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #6441a5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.twitch-button:hover {
+  background-color: #7e6ec2;
+}
+
+.twitch-image {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.twitch-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-text {
+  margin-top: 70px;
+  font-size: 50px;
+  font-family: "optimus";
+  color: #8a0806;
+  position: relative;
+  display: inline-block; /* important */
+  padding: 0 40px; /* space between text and lines */
+}
+
+.section-text::before,
+.section-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 80px; /* line length */
+  height: 3px; /* line thickness */
+  background: #8a0806; /* same color as text */
+  transform: translateY(-50%);
+}
+
+.section-text::before {
+  left: -70px;
+}
+
+.section-text::after {
+  right: -70px;
+}
+
+.section-body-text {
+  max-width: 900px; /* keeps the text readable (optional but recommended) */
+  margin: 20px auto; /* centers it under the title */
+  font-size: 30px;
+  font-family: "optimus";
+  color: #f9cf87;
+  text-align: center; /* THIS centers the text itself */
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px; /* keeps the text readable (optional but recommended) */
+  margin: 20px auto; /* centers it under the title */
+  font-size: 30px;
+  font-family: "optimus";
+  color: #f9cf87;
+  text-align: center;
+}
+
+.content-grid img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.different-color {
+  color: #8a0806;
+}
