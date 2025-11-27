@@ -1,0 +1,38 @@
+.intro-container {
+  height: 100vh; /* full screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: opacity 1.5s ease; /* fade effect */
+}
+
+.intro-container.fade-out {
+  opacity: 0;
+}
+
+.intro-text {
+  font-size: 48px;
+  font-family: "optimus", sans-serif;
+  color: #f8f8f2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+/* blinking cursor */
+.intro-text::after {
+  content: "|";
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
