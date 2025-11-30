@@ -23,7 +23,7 @@
 
 .button {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #2681da;
@@ -47,7 +47,7 @@
 
 .itch-button {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #da2c49;
@@ -178,4 +178,22 @@ a {
 
 .different-color {
   color: #8a0806;
+}
+
+@media (max-width: 1200px) {
+  .button,
+  .itch-button {
+    position: static; /* remove absolute positioning */
+    transform: none;
+    width: 80%;
+    margin: 10px auto; /* center + spaced */
+    display: flex;
+    justify-content: center;
+  }
+
+  .text {
+    font-size: 28px; /* smaller text */
+    width: 90%;
+    top: 40%;
+  }
 }
