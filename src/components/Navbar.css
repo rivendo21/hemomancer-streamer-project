@@ -52,3 +52,39 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+  .right-section {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #111;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px 0;
+    display: none;
+  }
+
+  .right-section.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-right: 30px;
+  }
+}
